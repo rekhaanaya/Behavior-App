@@ -1,0 +1,13 @@
+<table class="table table-striped">
+  <tr>
+    <th>Text</th>
+  </tr>
+
+      <tr>
+        <th><% h.sort{|a,b| a[1]<=>b[1]}.each do |elem| %>
+          <%= "\"#{elem[0]}\" => #{elem[1]} " %>
+        </th>
+      </tr>
+
+     <% end %>
+</table>
